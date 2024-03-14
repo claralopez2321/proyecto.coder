@@ -1,0 +1,565 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Añadido */
+    padding: 0; /* Añadido */
+    box-sizing: border-box;
+}
+
+
+
+/* Navbar CSS */
+.navbar-nav .nav-link {
+    color: #ffbf00;
+    font-size: 20px;
+}
+
+@media (max-width: 780px) {
+    .navbar-toggler-icon {
+        color: #ffbf00;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+        border-top: 2px solid #ffbf00;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        padding-bottom: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+        color: #3f3b3c;
+    }
+}
+
+/* Estilo Header */
+nav a:hover {
+    color: #3f3b3c;
+}
+
+/* Estilo para pantallas grandes */
+@media (min-width: 991px) {
+    .navbar-nav {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+
+    .navbar-collapse {
+        flex: unset !important;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0 15px;
+    }
+}
+
+/* CSS Sección HOME */
+.seccion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 0px;
+    min-height: 600px; /* Cambiado a min-height para asegurar que no se corte */
+    background-color: #fff0c0;
+    background-size: cover;
+    background-position: center;
+}
+
+#imagen-seccion1 {
+    max-width: 100%; /* Ajuste para asegurar que no se desborde */
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+.seccion1 h1 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.seccion1 h2 {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.seccion1 p {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+/* CSS Sección banner 2 de home */
+.seccion2-home section {
+    width: calc(100% - 40px);
+    height: 600px;
+    background-color: #2c2c2b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.seccion2-home h3 {
+    font-size: 30px;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.seccion2-home section p {
+    color: #f0f0f0;
+    align-self: center;
+    margin-left: 60px;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.seccion2-home img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    grid-column: 2;
+    grid-row: span 4;
+    justify-self: center;
+}
+
+.seccion2-home img:hover {
+    transform: scale(1.05);
+}
+
+.boton-contacto2 {
+    width: 210px;
+    height: 64px;
+    background-color: #ffbf00;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c0c09;
+    text-decoration: none;
+    margin-left: 60px;
+    grid-row: 4;
+    grid-column: 1;
+    align-self: self-end;
+}
+
+.boton-contacto2:hover {
+    background-color: rgb(255, 123, 0);
+    transform: scale(1.1);
+}
+
+.boton-contacto2:hover a {
+    color: white;
+}
+
+.boton-contacto2 a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+/* CSS Sección footer web home */
+footer {
+    background-color: #242420;
+    color: #fff;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lista-contacto-footer {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 40px 0px 20px 0px; /* Ajustado el padding */
+    position: relative;
+    list-style: none;
+}
+
+.lista-contacto-footer li i {
+    font-size: 23px;
+    color: #ffbf00;
+    margin-right: 20px;
+}
+
+.lista-contacto-footer li {
+    margin-bottom: 10px;
+}
+    
+     /*CSS Sección 1 subpage SERVICIOS*/
+
+
+     .seccion2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        height: 600px;
+        grid-gap: 0px; /*se Espacio entre las columnas */
+        background-image: url(../assets/Imagenes/bnppalseccionservicios.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .seccion2 h1 {
+        align-content: center;
+        align-self: self-end;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    .seccion2 h2{
+        align-content: center;
+        grid-row: 3;
+        grid-column: 2;
+        align-self: center;
+
+    }
+
+    .seccion2 p{
+        align-content: center;
+        grid-row: 4;
+        grid-column: 2;
+        align-self: center;
+        width: 600px
+    }
+    
+
+     /*CSS Sección banner 2 de subpage SERVICIOS*/
+
+     .seccion2-servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-template-rows: repeat(5, 1fr); /* Seis filas con igual altura */
+        grid-gap: 0px; /* Espacio entre las columnas */
+        width: 100%;
+        height: 600px;
+        background-color: #fff0c0;
+    }
+    
+    .seccion2-servicios h3{
+        color: #242420;
+        font-size: 40px;
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 60px;
+        align-self: center;
+
+    }
+
+    .seccion2-servicios p{
+        width: 700px;
+        align-content: center;
+        grid-row: 3;
+        grid-column: 1;
+        align-self: center;
+        padding-left: 60px;
+    }
+       
+    .lista-iconos {
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        list-style: none; 
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .lista-iconos li i {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #f87e05;
+        padding-left: 60px;
+        left: 0;
+        
+    }
+    
+    /* Tabla seccion servicios */
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+     
+      
+     /*CSS Sección 1 subpage TU HISTORIA*/
+
+    .historia {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        height: 700px;
+        grid-gap: 0px; /*se Espacio entre las columnas */
+        background-image: url(../assets/Imagenes/bnppalseccionhistoria.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .historia h1 {
+        align-content: center;
+        grid-row: 2;
+        grid-column: 1;
+        align-self: flex-end;
+        padding-left: 80px;
+    }
+
+    .historia h2 {
+        align-content: center;
+        grid-row: 3;
+        grid-column: 1;
+        align-self: center;
+        padding-left: 80px;
+    }
+
+    .historia p {
+        align-content: center;
+        grid-row: 4;
+        grid-column: 1;
+        align-self: center;
+        padding-left: 80px;
+        width: 500px;
+    }
+
+     /*CSS Sección 2 subpage TU HISTORIA*/
+
+
+    .sec-historia-2 section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 1200px; 
+        background-color: #fff0c0;
+    
+    }
+
+    .sec-historia-2 section h3{
+        color: #242420;
+        justify-self: center;
+        font-size: 30px;
+        padding: 60px 0px 30px 0px;
+        grid-row: 1;
+    
+    }
+
+    .sec-historia-2 section h4{
+        color: #242420;
+        justify-self: center;
+        font-size: 30px;
+        padding: 60px 0px 30px 0px;
+        grid-row: 3;
+        
+    }
+
+
+    .video-seccion2-tuhistoria {
+        width: 80%; 
+        height: 670px;
+        margin: 0 auto; 
+    }
+
+    .lista-tuhistoria li {
+        justify-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        list-style: none; 
+        grid-row: 4;
+    }
+    
+    .lista-tuhistoria li i {
+        font-size: 25px;
+        color: #f87e05;
+    }
+
+    .lista-tuhistoria .boton-contacto2{
+        justify-self: center;
+        align-self: center;
+        grid-row: 5;
+    }
+
+
+
+     /*CSS Sección 1 subpage PROYECTOS*/
+
+     .seccion1-proyectos{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        height: 700px;
+        grid-gap: 0px; /*se Espacio entre las columnas */
+        background-image: url(../assets/Imagenes/bnppalseccionproyectos.jpg);
+        background-size: cover;
+        background-position: center;
+     }            
+
+
+     .seccion1-proyectos h1 {
+        font-size: 36px; 
+        grid-column: 2;
+        grid-row: 2;
+        padding-left: 30px;
+    }
+
+    .seccion1-proyectos h2 {
+        font-size: 30px; 
+        grid-column: 2;
+        grid-row: 3;
+        padding-left: 30px;
+    }
+
+    .seccion1-proyectos p {
+        grid-column: 2;
+        grid-row: 4;
+        padding-left: 30px;
+        width: 500px;
+    }
+
+    /*CSS Sección 2 subpage proyectos*/
+
+    .seccion2-proyectos {
+        display: grid;
+        width: 100%;
+        margin: 30px auto;
+        height: 600px;
+        background-color: #fff0c0;
+    }
+    
+    .seccion2-proyectos {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .seccion2-proyectos h3 {
+        font-size: 30px;
+        color: #242420;
+        padding: 30px 0px 30px 0px
+    }
+    .seccion2-proyectos h4 {
+        color: #242420;
+        font-size: 20px;
+        padding-bottom: 30px ;
+    }
+    
+    #parrafo-seccion2-proyectos {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+   .cuadros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #fff0c0;
+    justify-content: center;
+
+   }
+
+   .cuadros-grid article {
+    background-color: #ccc7c2;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 20px; /* Espacio a la derecha de cada artículo */
+    padding-left: 10px;
+}
+    
+
+    
+    /*CSS subpage contacto*/
+
+    .contacto-background1 h1 {
+        color: #ffbf00; 
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contacto-background1 {
+        background-color: #2c2c2b; 
+        padding: 20px;
+        margin: 0px auto;
+    }
+
+    .contacto-background  {
+        background-color: #fff0c0; 
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contacto-background h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .form-contacto {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    input[type="submit"] {
+        font-family: "Montserrat", sans-serif;
+        display: inline-block;
+        width: 120px;
+        height: 60px;
+        padding: 10px 10px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+        border-radius: 10px;
+        border: 0px solid #ffffff;
+        background-color: #ffbf00;
+        color: #353131;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out
+        
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+
+   
+
+
+    
