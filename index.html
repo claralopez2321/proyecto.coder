@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForeverFramed</title>
-    <!-- Boostrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="shortcut icon" href="./assets/Imagenes/logo02.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
@@ -13,43 +13,44 @@
 </head>
 
 <body>
-  <header class="container-fluid bg-white text-white py-3">
-    <div class="row align-items-center">
-        <div class="col-lg-3 col-md-4 col-8">
-            <a href="index.html" class="d-block">
-                <img src="./Assets/Imagenes/logo02.png" alt="logo de empresa" class="img-fluid" width="150">
-            </a>
+    <header class="container-fluid bg-white text-white py-3">
+        <div class="row align-items-center">
+            <div class="col-lg-3 col-md-4 col-8">
+                <a href="index.html" class="d-block">
+                    <img src="./Assets/Imagenes/logo02.png" alt="logo de empresa" class="img-fluid" width="150">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-8 col-4 ms-auto">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <!-- Botón de hamburguesa para móviles -->
+                    <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Contenido del menú -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/tuhistoria.html">Tu historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div class="col-lg-9 col-md-8 col-4 ms-auto">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <!-- Botón de hamburguesa para móviles -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Contenido del menú -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/tuhistoria.html">Tu historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-</header>
-         
+    </header>
+             
     <div>
         <section class="seccion1">
+            <img src="./assets/Imagenes/fotospolaroid-16.png" alt="imagen-framed" id="imagen2-seccion1">
             <img src="./Assets/Imagenes/logos04.png" alt="logo-framed" id="imagen-seccion1">
             <h1 class="titulo1">Inmortaliza tus momentos</h1>
             <h2 class="subtitulo1">Y compártelos con todos</h2> 
@@ -89,12 +90,10 @@
             <h3 class="titulo3-home">Nuestros servicios</h3>
             <p class="parrafoh4-home">¡Captura tus momentos más preciados y conviértelos en recuerdos eternos con ForeverFramed.com! Expertos en transformar tus eventos especiales en obras de arte digital, estamos aquí para asegurarnos de que cada momento importante de tu vida brille en la pantalla. Descubre la magia de inmortalizar tus recuerdos con nosotros.</p>
             <img src="./Assets/Imagenes/imagenbanner2home.jpg" alt="pareja-home2">
-            <button class="boton-contacto2">
-                <a href="./paginas/contacto.html" class="boton-contacto">Contacto</a>
-            </button>
+            <a href="./paginas/contacto.html" class="boton-contacto2">Contacto</a>
         </section>
     </div>
-
+    
     <footer>
         <div class="logo-footer">
             <img src="./Assets/Imagenes/logotransparenteparafondonegro.png" alt="Logo footer">
@@ -106,8 +105,7 @@
             </ul>
         </div>
     </footer>
-    <!-- Boostrap JS -->
+    <!-- Bootstrap JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

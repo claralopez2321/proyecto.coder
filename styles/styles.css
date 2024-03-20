@@ -13,13 +13,22 @@ body {
     font-size: 20px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 990px) {
+    .navbar-toggler {
+        color: #3f3b3c; /* Cambiamos el color del botón del menú hamburguesa */
+        float: right; /* Alineamos el botón a la derecha */
+        padding-right: 15px; /* Agregamos un poco de padding a la derecha */
+    }
+
     .navbar-toggler-icon {
-        color: #ffbf00;
+        background-color: #3f3b3c; /* Cambiamos el color del icono del menú hamburguesa */
+        height: 3px; /* Ajustamos la altura del icono */
+        width: 22px; /* Ajustamos el ancho del icono */
     }
 
     .navbar-nav {
         padding-top: 10px;
+        justify-content: center; /* Alinea los elementos al centro */
     }
 
     .navbar-collapse {
@@ -27,6 +36,8 @@ body {
         border-top: 2px solid #ffbf00;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         padding-bottom: 10px;
+        float: right; /* Alineamos el menú a la derecha */
+        padding-right: 15px; /* Agregamos un poco de padding a la derecha */
     }
 
     .navbar-nav .nav-item {
@@ -49,7 +60,7 @@ nav a:hover {
 @media (min-width: 991px) {
     .navbar-nav {
         display: flex !important;
-        justify-content: flex-end;
+        justify-content: flex-end; /* Alinea los elementos a la derecha */
     }
 
     .navbar-collapse {
@@ -65,40 +76,74 @@ nav a:hover {
 .seccion1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    grid-gap: 0px;
-    min-height: 600px; /* Cambiado a min-height para asegurar que no se corte */
+    grid-template-rows: auto; /* El tamaño de las filas se ajustará automáticamente */
+    min-height: 600px;
     background-color: #fff0c0;
-    background-size: cover;
-    background-position: center;
+    padding: 20px;
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+#imagen2-seccion1 {
+    width: 100%;
+    height: auto; /* La altura se ajustará automáticamente */
+    max-width: 100%; /* Para evitar que la imagen se agrande más allá de su tamaño natural */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformar */
+    grid-row: 1 / span 4; /* La imagen ocupa las filas 1 a 4 */
+    grid-column: 1; /* La imagen está en la primera columna */
 }
 
 #imagen-seccion1 {
-    max-width: 100%; /* Ajuste para asegurar que no se desborde */
-    height: auto;
-    grid-column: 2;
-    grid-row: 2;
-    align-self: center;
+    max-width: 100%;
+    padding-top: 80px;
+    grid-row: 1
+    grid-column: 2; 
 }
 
 .seccion1 h1 {
-    grid-row: 3;
+    font-size: 32px;
     grid-column: 2;
+    grid-row: 2; /* El título está en la primera fila */
 }
 
 .seccion1 h2 {
-    grid-row: 4;
+    font-size: 24px;
+    color: #555;
     grid-column: 2;
+    grid-row: 3; /* El subtítulo está en la segunda fila */
 }
 
 .seccion1 p {
-    grid-row: 5;
+    font-size: 18px;
+    color: #333;
+    grid-row: 4; /* El párrafo está en la tercera fila */
     grid-column: 2;
+}
+
+@media (max-width: 768px) {
+    .seccion1 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+    }
+    
+    #imagen2-seccion1,
+    #imagen-seccion1 {
+        grid-row: auto; /* Deja que las imágenes floten automáticamente */
+        grid-column: auto; /* Deja que las imágenes floten automáticamente */
+    }
+    
+    #imagen-seccion1 {
+        grid-row: 1; /* El logo está en la primera fila */
+    }
+
+    .seccion1 h1,
+    .seccion1 h2,
+    .seccion1 p {
+        grid-column: 1; /* Los títulos y párrafos ocupan toda la fila en móviles */
+    }
 }
 
 /* CSS Sección banner 2 de home */
 .seccion2-home section {
-    width: calc(100% - 40px);
+    width: 100%;
     height: 600px;
     background-color: #2c2c2b;
     display: grid;
@@ -114,6 +159,8 @@ nav a:hover {
     align-self: center;
     grid-row: 2;
     grid-column: 1;
+    color: #f0f0f0;
+    padding-left: 60px;
 }
 
 .seccion2-home section p {
@@ -176,12 +223,82 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .seccion2-home section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .seccion2-home h3 {
+        padding-left: 0;
+    }
+
+    .seccion2-home section p {
+        margin-left: 0;
+    }
+
+    .seccion2-home img {
+        width: 80%;
+        grid-column: auto;
+        grid-row: auto;
+        margin-top: 20px;
+    }
+
+    .boton-contacto2 {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .seccion2-home section p {
+        margin-left: 20px; /* Agregamos un poco de margen a la izquierda */
+        margin-right: 20px; /* y a la derecha */
+    }
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .seccion2-home section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        height: 600px;
+        text-align: left;
+    }
+
+    .seccion2-home h3 {
+        padding-left: 60px;
+    }
+
+    .seccion2-home section p {
+        margin-left: 60px;
+    }
+
+    .seccion2-home section p {
+        margin-left: 40px; /* Ajustamos un poco más para tabletas */
+        margin-right: 40px;
+    }
+
+    .seccion2-home img {
+        width: 50%;
+        grid-column: 2;
+        grid-row: span 4;
+        margin-top: 30px;
+    }
+
+    .boton-contacto2 {
+        width: 210px;
+        margin-left: 60px;
+    }
+}
+
 /* CSS Sección footer web home */
 footer {
     background-color: #242420;
     color: #fff;
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 40px;
 }
@@ -194,7 +311,7 @@ footer {
 .lista-contacto-footer {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    padding: 40px 0px 20px 0px; /* Ajustado el padding */
+    padding: 40px 0px 20px 40px; /* Ajustado el padding */
     position: relative;
     list-style: none;
 }
