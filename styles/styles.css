@@ -264,7 +264,7 @@ body {
     margin-left: 60px;
     grid-row: 4;
     grid-column: 1;
-    align-self: self-end;
+    align-self: self-start;
 }
 
 .boton-contacto2:hover {
@@ -385,95 +385,192 @@ footer {
     margin-bottom: 10px;
 }
     
-     /*CSS Sección 1 subpage SERVICIOS*/
+/*CSS Sección 1 subpage SERVICIOS*/
+
+.seccion2 {
+    display: grid;
+    grid-template-columns: 40% 1fr; /* Dos columnas: la imagen al 40% y el contenido */
+    grid-template-rows: auto auto auto; /* Tres filas para cada elemento */
+    background-color: #f5d4a2; /* Cambia el color de fondo */
+    padding: 20px;
+    gap: 20px; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+
+    /* Ajustes para dispositivos móviles */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna para dispositivos móviles y tablets */
+        grid-template-rows: auto auto auto auto; /* Cuatro filas */
+        padding: 10px; /* Reduce el padding en dispositivos móviles y tablets */
+    }
+}
+
+#imagen1-seccionservicios {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Ancho al 100% del contenedor */
+    grid-column: 1; /* Coloca la imagen en la columna 1 */
+    grid-row: 1 / span 4; /* Ocupa desde la fila 1 hasta la 4 */
+
+    /* Ajustes para dispositivos móviles y tablets */
+    @media (max-width: 768px) {
+        grid-column: 1; /* Coloca la imagen en la única columna */
+        grid-row: 1; /* Ocupa solo la fila 1 */
+        justify-self: center; /* Centra la imagen */
+    }
+}
+
+.seccion2 h1 {
+    font-weight: bold;
+    padding-top: 100px;
+    color: #181616;
+    margin: 0; /* Elimina el margen para los títulos */
+    grid-column: 2; /* En la segunda columna */
+    grid-row: 1; /* En la primera fila */
+
+    /* Ajustes para dispositivos móviles y tablets */
+    @media (max-width: 768px) {
+        font-size: 30px;
+        grid-column: 1; /* En la única columna */
+        grid-row: 2; /* En la segunda fila */
+        padding-top: 0px;
+    }
+}
+
+.seccion2 h2 {
+    font-size: 20px;
+    color: #181717;
+    margin: 0;
+    text-align: left; /* Alinea a la izquierda */
+    grid-column: 2; /* En la segunda columna */
+    grid-row: 2; /* En la segunda fila */
+
+    /* Ajustes para dispositivos móviles y tablets */
+    @media (max-width: 768px) {
+        font-size: 16px;
+        grid-column: 1; /* En la única columna */
+        grid-row: 3; /* En la tercera fila */
+    }
+}
+
+.seccion2 p {
+    font-size: 16px;
+    color: #141212;
+    margin: 0; /* Elimina el margen para el párrafo */
+    text-align: left; /* Alinea a la izquierda */
+    grid-column: 2; /* En la segunda columna */
+    grid-row: 3; /* En la tercera fila */
+
+    /* Ajustes para dispositivos móviles y tablets */
+    @media (max-width: 768px) {
+        font-size: 14px;
+        grid-column: 1; /* En la única columna */
+        grid-row: 4; /* En la cuarta fila */
+    }
+}
+ /*CSS Sección banner 2 de subpage SERVICIOS*/
+
+ .seccion2-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    grid-template-rows: auto auto auto auto auto; /* Cinco filas con contenido */
+    background-color: #fff0c0; /* Color de fondo */
+    padding: 40px;
+    gap: 20px; /* Espacio entre elementos */
+    max-width: 1920px; /* Ancho máximo para centrar en pantallas anchas */
+    margin: 0 auto; /* Centrar en el contenedor */
+}
+
+.seccion2-servicios h3 {
+    color: #242420;
+    font-size: 40px;
+    grid-column: 1 / span 2; /* Ocupa las dos columnas */
+    grid-row: 1; /* En la primera fila */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+.seccion2-servicios p {
+    font-size: 18px;
+    color: #555;
+    grid-column: 1 / span 2; /* Ocupa las dos columnas */
+    grid-row: 2; /* En la segunda fila */
+    text-align: left; /* Centrar el texto */
+}
+
+.lista-iconos {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna para los íconos */
+    gap: 10px; /* Espacio entre elementos */
+    grid-column: 1 / span 2; /* Ocupa las dos columnas */
+    grid-row: 3; /* En la tercera fila */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0;
+    margin: 0;
+}
+
+.lista-iconos li {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.lista-iconos li i {
+    font-size: 24px;
+    color: #f87e05;
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
 
 
-     .seccion2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-        height: 600px;
-        grid-gap: 0px; /*se Espacio entre las columnas */
-        background-image: url(../assets/Imagenes/bnppalseccionservicios.jpg);
-        background-size: cover;
-        background-position: center;
+.boton-contacto2  {
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-contacto2 a {
+    color:#242420
+}
+
+.boton-contacto2 a:hover {
+}
+
+/* Media query para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+    .seccion2-servicios {
+        grid-template-columns: 1fr; /* Una sola columna para dispositivos móviles y tablets */
+        grid-template-rows: auto auto auto auto auto; /* Cinco filas con contenido */
+        padding: 20px; /* Espaciado interno */
     }
 
-    .seccion2 h1 {
-        align-content: center;
-        align-self: self-end;
-        grid-row: 2;
-        grid-column: 2;
-    }
-    
-    .seccion2 h2{
-        align-content: center;
-        grid-row: 3;
-        grid-column: 2;
-        align-self: center;
-
+    .seccion2-servicios h3 {
+        font-size: 32px;
     }
 
-    .seccion2 p{
-        align-content: center;
-        grid-row: 4;
-        grid-column: 2;
-        align-self: center;
-        width: 600px
-    }
-    
-
-     /*CSS Sección banner 2 de subpage SERVICIOS*/
-
-     .seccion2-servicios {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-        grid-template-rows: repeat(5, 1fr); /* Seis filas con igual altura */
-        grid-gap: 0px; /* Espacio entre las columnas */
-        width: 100%;
-        height: 600px;
-        background-color: #fff0c0;
-    }
-    
-    .seccion2-servicios h3{
-        color: #242420;
-        font-size: 40px;
-        grid-column: 1;
-        grid-row: 1;
-        padding-left: 60px;
-        align-self: center;
-
+    .seccion2-servicios p {
+        font-size: 16px;
     }
 
-    .seccion2-servicios p{
-        width: 700px;
-        align-content: center;
-        grid-row: 3;
-        grid-column: 1;
-        align-self: center;
-        padding-left: 60px;
-    }
-       
     .lista-iconos {
-        font-family: "Montserrat", sans-serif;
-        position: relative;
-        list-style: none; 
-        grid-column: 1;
-        grid-row: 2;
+        grid-row: 3; /* En la tercera fila */
+        grid-column: 1; /* En la única columna */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
     }
-    
-    .lista-iconos li i {
-        font-size: 20px;
-        margin-bottom: 20px;
-        color: #f87e05;
-        padding-left: 60px;
-        left: 0;
-        
+
+    .boton-contacto2 {
+        grid-row: 5; /* En la quinta fila */
+        grid-column: 1; /* En la única columna */
     }
-    
+}
     /* Tabla seccion servicios */
 
     table {
+        height: 200px;
+        background-color: #ffffff;
         width: 50%;
         border-collapse: collapse;
         margin: 20px auto;
@@ -484,7 +581,12 @@ footer {
         text-align: left;
     }
     th {
-        background-color: #f2f2f2;
+        background-color:#ffbf00
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 30px;
     }
      
       
