@@ -166,6 +166,7 @@ body {
 
 .seccion1 h2 {
     font-size: 24px;
+    justify-self: left;
     color: #555;
     grid-column: 2;
     grid-row: 3; /* El subtítulo está en la segunda fila */
