@@ -1,5 +1,6 @@
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0; /* Añadido */
     padding: 0; /* Añadido */
     box-sizing: border-box;
@@ -157,8 +158,6 @@ width: 50px auto;
 #imagen-seccion1 {
     max-width: 100%;
     padding-top: 80px;
-    grid-row: 1
-    grid-column: 2; 
 }
 
 .seccion1 h1 {

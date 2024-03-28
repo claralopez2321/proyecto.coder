@@ -1,0 +1,32 @@
+/* CSS Sección footer web home */
+footer {
+    background-color: #242420;
+    color: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .lista-contacto-footer {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        padding: 40px 0px 20px 40px;
+        position: relative;
+        list-style: none;
+
+        li {
+            margin-bottom: 10px;
+
+            i {
+                font-size: 23px;
+                color: #ffbf00;
+                margin-right: 20px;
+            }
+        }
+    }
+}
