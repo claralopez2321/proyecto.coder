@@ -40,9 +40,6 @@
         grid-row: span 4;
         justify-self: center;
 
-        &:hover {
-            transform: scale(1.05);
-        }
     }
 
     @media screen and (max-width: 768px) {

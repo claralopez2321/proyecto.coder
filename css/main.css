@@ -14,25 +14,6 @@ body {
   font-family: "Montserrat";
   src: url(/assets/Fonts/Montserrat-Regular.ttf);
 }
-@font-face {
-  font-family: "Unbounded-VariableFont_wght";
-  src: url(/assets/Fonts/Unbounded-VariableFont_wght.ttf);
-}
-body {
-  font-family: "Montserrat-Regular";
-  margin: 0; /* Añadido */
-  padding: 0; /* Añadido */
-  box-sizing: border-box;
-  overflow-x: hidden; /* Evita el desplazamiento horizontal */
-}
-
-h1 {
-  font-family: "Montserrat-Regular";
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: "Montserrat-Regular";
-}
 
 .boton-contacto2 {
   width: 210px;
@@ -249,9 +230,6 @@ h2, h3, h4, h5, h6 {
   grid-row: span 4;
   justify-self: center;
 }
-.seccion2-home section img:hover {
-  transform: scale(1.05);
-}
 @media screen and (max-width: 768px) {
   .seccion2-home section {
     grid-template-columns: 1fr;
@@ -306,7 +284,6 @@ h2, h3, h4, h5, h6 {
   overflow: hidden;
   text-align: center;
   line-height: 64px;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #0c0c09;
@@ -351,7 +328,6 @@ footer .logo img {
   height: auto;
 }
 footer .lista-contacto-footer {
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   padding: 40px 0px 20px 40px;
   position: relative;
