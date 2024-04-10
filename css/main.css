@@ -10,10 +10,6 @@ body {
   width: 50px auto;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url(/assets/Fonts/Montserrat-Regular.ttf);
-}
 
 .boton-contacto2 {
   width: 210px;
