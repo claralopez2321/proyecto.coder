@@ -13,6 +13,7 @@
   
     h1 {
       align-content: center;
+      font-family: $font-family-unbounded;
       grid-row: 2;
       grid-column: 1;
       align-self: flex-end;
@@ -21,6 +22,8 @@
   
     h2 {
       align-content: center;
+      font-family: $font-family-unbounded;
+      font-size: 25px;
       grid-row: 3;
       grid-column: 1;
       align-self: center;
@@ -40,10 +43,10 @@
     // Media query para hacerlo responsive
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr; // Cambiamos a una sola columna
-      height: 500px; // Altura automática para adaptarse al contenido
+      height: 350px; // Altura automática para adaptarse al contenido
       padding: 20px; // Añadimos un espacio alrededor del contenido
       background-image: none; // Quitamos la imagen de fondo
-      background-color: #e2e1de; // Color de fondo para tablets y móviles
+      background-color: #ffbf00; // Color de fondo para tablets y móviles
   
       h1,
       h2,
@@ -67,10 +70,14 @@
     height: 1200px;
     background-color: #fff0c0;
   
-    h3,
+    h3{
+      font-family: $font-family-unbounded;
+      text-align: center;
+    }
     h4 {
       color: #242420;
-      justify-self: center;
+      text-align: center;
+      font-family: $font-family-unbounded;
       font-size: 30px;
       padding: 60px 0px 30px 0px;
     }
@@ -82,9 +89,8 @@
     }
   
     .lista-tuhistoria li {
-      justify-items: center;
       font-family: "Montserrat", sans-serif;
-      font-size: 25px;
+      font-size: 20px;
       list-style: none;
       grid-row: 4;
   
@@ -94,11 +100,24 @@
       }
     }
   
-    .lista-tuhistoria .boton-contacto2 {
-      justify-self: center;
-      align-self: center;
-      grid-row: 5;
-    }
+    .btn-warning {
+      padding: 5px 10px; /* Ajustar el padding para un botón más pequeño */
+      font-size: 30px; /* Tamaño de fuente más pequeño */
+  }
+  
+  .btn-sm {
+      padding: 5px 10px;
+      font-size: 25px;
+  }
+  
+  .align-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Añadir también el alineamiento de texto al centro */
+  }
+
+    
   
     // Media query para hacerlo responsive
     @media screen and (max-width: 768px) {
