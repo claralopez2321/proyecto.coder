@@ -1,5 +1,5 @@
 .headerff {
-  height: 70px;
+  height: 90px;
 }
 
 .navbar-nav .nav-link {
@@ -15,10 +15,11 @@
 /* Estilos para dispositivos móviles y tabletas */
 @media (max-width: 768px) {
   .headerff {
-    height: 100px; /* Altura del encabezado ajustada para dispositivos móviles */
+    height: 100%; /* Altura del encabezado ajustada para dispositivos móviles */
   }
 
   .navbar-brand img {
-    max-height: 60px !important; /* Tamaño máximo de la imagen del logo en dispositivos móviles */
+    max-height: 110px !important; /* Tamaño máximo de la imagen del logo en dispositivos móviles */
   }
 }
+
